@@ -24,16 +24,6 @@
 		</div>
 	</header>
   <main>
-	<div class="content-wrapper">
-		<div class="content-container">
-			<div class="img-introduce">
-			</div>
-			<div class="intro-container">
-				<div class="intro-title">CHECK US OUT</div>
-				<div class="intro-word">Save More</div>
-			</div>
-		</div>
-	</div>
 	<home-page :products="products"></home-page>
   </main>
   <footer>

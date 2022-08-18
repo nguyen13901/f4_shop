@@ -2539,6 +2539,7 @@ main {
 
 .content-wrapper {
     width: 100%;
+    padding-bottom: 60px;
 }
 
 .content-container {
@@ -2622,7 +2623,7 @@ footer {
     background: #fff;
     font-style: italic;
     position: relative;
-    bottom: 1px;
+    bottom: 3px;
 }
 
 .join-btn:hover {
@@ -2642,3 +2643,89 @@ footer {
     margin-bottom: 20px;
 }
 
+.products-wrapper {
+    color: #fff;
+}
+
+.products-wrapper {
+    display: flex;
+    background: #000;
+    padding: 20px 0px 40px 0px;
+}
+
+.btn-product button {
+    position: relative; 
+    top: 156px;
+    background: #000;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.product-container {
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.product {
+    width: 330px;
+}
+
+.product-name {
+    font: normal normal normal 16px/1.75em didot-w01-italic,didot-w05-italic,serif;
+    color : var(--wut-text-color, var(--Text3224411201-primary-color));
+}
+
+.product-price {
+    font: normal normal normal 13px/1.75em didot-w01-italic,didot-w05-italic,serif;
+    color: #BFBFBF;
+}
+
+.desc-container {
+    background:  rgb(230, 216, 215);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 0px;
+}
+
+.desc-container div{
+    margin-bottom: 30px;
+}
+
+.img-desc {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/PackageDelivered.jpg);
+    background-size: cover;
+    margin: 0px auto;
+}
+
+.desc-title {
+    color: var(--color_11);
+    text-align: center;
+    line-height: 1.35em;
+    font-size: 40px;
+    font: var(--font_4);
+}
+
+.detail-desc {
+    color: var(--color_11);
+    text-align: center;
+    line-height: 1.875em;
+    font-size: 15px;
+    font: var(--font_9);
+    width: 60%;
+    margin: 0 auto;
+}

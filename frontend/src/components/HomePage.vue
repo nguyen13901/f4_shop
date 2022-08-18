@@ -1,43 +1,28 @@
 <template>
-  <div id="home">
-    <h2>List product one: </h2>
-    <ul>
-        <li v-for="product in products" :key="product">
-            <span class="name">Name: {{ product.name }}</span>
-            <span class="price">Price: {{ product.price }}</span>
-        </li>
-    </ul>
-  </div>
+    <div id="home">
+        <decorate-home></decorate-home>
+        <product-home></product-home>
+        <introduce-home></introduce-home>
+    </div>
 </template>
 
 <script>
+import DecorateHome from '../pages/homepage/DecorateHome.vue'
+import IntroduceHome from '../pages/homepage/IntroduceHome.vue';
+import ProductHome from '../pages/homepage/ProductHome.vue';
 export default {
-    props:['products'],
+    components: {
+        "DecorateHome": DecorateHome, 
+        "IntroduceHome": IntroduceHome, 
+        "ProductHome": ProductHome, 
+    },
+    props: ['products'],
     data() {
         return {
-			
+
         }
     }
 }
 </script>
 <style scoped>
-#home{
-    background: #FFF8B1;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
-    padding: 10px 20px;
-}
-#product-list-one ul{
-    padding: 0;
-}
-#product-list-one li{
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 10px;
-    padding: 20px;
-    background: rgba(255,255,255,0.7);
-}
-.price{
-    font-weight: bold;
-    color: #E8800C;
-}
 </style>
