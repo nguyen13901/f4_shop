@@ -2651,6 +2651,12 @@ footer {
     display: flex;
     background: #000;
     padding: 20px 0px 40px 0px;
+    height: 470px;
+}
+
+.product-img img{
+    width: 330px;
+    height: 330px;
 }
 
 .btn-product button {
@@ -2660,6 +2666,12 @@ footer {
     border: none;
     color: #fff;
     font-size: 30px;
+    border-radius: 50%;
+}
+
+.btn-product button:hover {
+    background: #fff;
+    color: #000;
 }
 
 .prev-btn {
@@ -2673,12 +2685,39 @@ footer {
 .product-container {
     margin: 10px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 90%;
 }
 
 .product {
+    width: 25%;
+}
+
+.product-info {
     width: 330px;
+    margin: 0 auto;
+}
+
+.product-view {
+    height: 332px;
+}
+
+.product-view:hover .view-product-btn button{
+    visibility: visible;
+}
+
+.view-product-btn {
+    position: relative;
+    bottom: 50px;
+}
+
+.view-product-btn button{
+    font: normal normal normal 14px/1.75em didot-w01-italic,didot-w05-italic,serif;
+    width: 330px;
+    height: 50px;
+    background: #fff;
+    visibility: hidden;
+    border: none;
 }
 
 .product-name {
@@ -2728,4 +2767,53 @@ footer {
     font: var(--font_9);
     width: 60%;
     margin: 0 auto;
+}
+
+.shop-info-wrapper {
+    padding-top: 80px;
+    background: #000;
+}
+
+.shop-info-container {
+    width: 90%;
+    display: flex;
+    background: rgb(25, 25, 25);
+    margin: 0 auto;
+}
+
+.shop-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding-top: 110px;
+}
+
+.shop-info div {
+    margin: 0px auto 20px;
+    /* margin-bottom: 20px; */
+    text-align: center;
+    width: 70%;
+}
+
+.bg-img {
+    background-image: url(../images/shop-address.jpeg);
+    background-size: cover;
+    width: 50%;
+}
+
+.shop-info-title h3 {
+    font: var(--font_4);
+    color: rgb(var(--color_18));
+}
+
+.address-map iframe {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.shop-info p {
+    font: var(--font_9);
+    color: rgb(var(--color_15));
 }
