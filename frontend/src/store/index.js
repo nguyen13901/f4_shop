@@ -1,59 +1,35 @@
 import { createStore } from 'vuex'
 
 export default createStore({
+  strict: true,
   state: {
-    cart: {
-        items: [],
-    },
-    isAuthenticated: false,
-    token: '',
-    isLoading: false
+    current_product: {},
+    isViewProduct: false,
+  },
+  getters: {
+    getCurrentProduct(state) {
+      return state.current_product;
+    }
   },
   mutations: {
-    initializeStore(state) {
-      if (localStorage.getItem('cart')) {
-        state.cart = JSON.parse(localStorage.getItem('cart'))
-      } else {
-        localStorage.setItem('cart', JSON.stringify(state.cart))
-      }
-
-      if (localStorage.getItem('token')) {
-          state.token = localStorage.getItem('token')
-          state.isAuthenticated = true
-      } else {
-          state.token = ''
-          state.isAuthenticated = false
-      } 
+    viewProduct(state, product) {
+      state.current_product = product;
+      state.isViewProduct = true;
     },
-    addToCart(state, item) {
-      const exists = state.cart.items.filter(i => i.product.id === item.product.id)
-      if (exists.length) {
-        exists[0].quantity = parseInt(exists[0].quantity) + parseInt(item.quantity)
-      } else {
-        state.cart.items.push(item)
-      }
-
-      localStorage.setItem('cart', JSON.stringify(state.cart))
-    },
-    setIsLoading(state, status) {
-      state.isLoading = status
-    },
-    setToken(state, token) {
-        state.token = token
-        state.isAuthenticated = true
-    },  
-    removeToken(state) {
-        state.token = ''
-        state.isAuthenticated = false
-    },
-    clearCart(state) {
-      state.cart = { items: [] }
-
-      localStorage.setItem('cart', JSON.stringify(state.cart))
-    },
+    cancelViewProduct(state) {
+      state.isViewProduct = false;
+    }
   },
   actions: {
-  },
-  modules: {
+    viewProduct(context, product) {
+      setTimeout(() => {
+        context.commit("viewProduct", product);
+    }, 100);
+    },
+    cancelViewProduct(context) {
+      setTimeout(() => {
+        context.commit("cancelViewProduct");
+    }, 100);
+    }
   }
 })

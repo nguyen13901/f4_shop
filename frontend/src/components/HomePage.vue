@@ -20,10 +20,8 @@ export default {
         "ProductHome": ProductHome, 
         "ShopInfo": ShopInfo,
     },
-    props: ['products'],
     data() {
         return {
-
         }
     }
 }

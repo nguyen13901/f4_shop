@@ -12,7 +12,7 @@
                         <div class="product-img">
                             <img :src="product.get_image" alt="backpack">
                         </div>
-                        <div class="view-product-btn"><button>Quick View</button></div>
+                        <div class="view-product-btn"><button id="myBtn" @click="viewProduct(product)">Quick View</button></div>
                     </div>
                     <div class="product-name">{{ product.name }}</div>
                     <div class="product-price">{{ product.price }} $</div>
@@ -28,6 +28,7 @@
 </template>
 <script>
 import axios from 'axios'
+import { mapActions } from 'vuex';
 
 export default {
     data() {
@@ -38,7 +39,6 @@ export default {
         }
     },
     components: {
-
     },
     mounted() {
         return this.getProducts();
@@ -65,7 +65,11 @@ export default {
                 this.current = 0;
             }
             this.getProducts();
-        }
+            console.log(this.viewProduct);
+        },
+        ...mapActions([
+            'viewProduct'
+        ])
     }
 }
 </script>
