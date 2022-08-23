@@ -1,0 +1,41 @@
+@import "root.css";
+
+#about {
+    background: #212121;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+#about div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#about div.about-us-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#about h3.about-title {
+    color: rgb(var(--color_18));
+    font: var(--font_4);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.35em;
+    font-size: 40px;
+    margin: 30px 0px 10px 0px;
+}
+
+#about div.about-desc p {
+    font: var(--font_9);
+    color: rgb(var(--color_15));
+    text-align: center;
+    line-height: 1.875em;
+    font-size: 15px;
+}

@@ -4,14 +4,16 @@
         <product-home></product-home>
         <introduce-home></introduce-home>
         <shop-info></shop-info>
+        <contact-mail></contact-mail>
     </div>
 </template>
 
 <script>
-import DecorateHome from '../pages/homepage/DecorateHome.vue'
-import IntroduceHome from '../pages/homepage/IntroduceHome.vue';
-import ProductHome from '../pages/homepage/ProductHome.vue';
-import ShopInfo from '../pages/homepage/ShopInfo.vue';
+import DecorateHome from '../pages/home_page/DecorateHome.vue'
+import IntroduceHome from '../pages/home_page/IntroduceHome.vue';
+import ProductHome from '../pages/home_page/ProductHome.vue';
+import ShopInfo from '../pages/home_page/ShopInfo.vue';
+import ContactMail from '../pages/home_page/ContactMail.vue';
 
 export default {
     components: {
@@ -19,6 +21,7 @@ export default {
         "IntroduceHome": IntroduceHome, 
         "ProductHome": ProductHome, 
         "ShopInfo": ShopInfo,
+        "ContactMail": ContactMail,
     },
     data() {
         return {
@@ -27,4 +30,5 @@ export default {
 }
 </script>
 <style scoped>
+@import "../css/home.css";
 </style>

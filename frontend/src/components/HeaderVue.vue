@@ -26,15 +26,15 @@
             <div class="nav-container">
                 <div class="navigation">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Meet the Team</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Store Policies</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Shop</a></li>
+                        <li><a><router-link to="/">Home</router-link></a></li>
+                        <li><a><router-link to="/about-us">About us</router-link></a></li>
+                        <li><a href="#"><router-link to="/contact">Contact</router-link></a></li>
+                        <li><a href="#"><router-link to="/meet-the-team">Meet the Team</router-link></a></li>
+                        <li><a href="#"><router-link to="/FAQ">FAQ</router-link></a></li>
+                        <li><a href="#"><router-link to="/support">Support</router-link></a></li>
+                        <li><a href="#"><router-link to="/store-policies">Store Policies</router-link></a></li>
+                        <li><a href="#"><router-link to="/testimonials">Testimonials</router-link></a></li>
+                        <li><a href="#"><router-link to="/shop">Shop</router-link></a></li>
                     </ul>
                 </div>
                 <i class="fa fa-facebook"></i>
