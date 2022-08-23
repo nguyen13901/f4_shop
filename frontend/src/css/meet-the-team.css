@@ -1,0 +1,63 @@
+@import "root.css";
+
+#meet-the-team {
+
+}
+
+#meet-the-team div.wrapper h2.title{
+    text-transform: uppercase;
+    color: rgb(var(--color_18));
+    text-align: center;
+    line-height: 1.35em;
+    font-size: 40px;
+    font: var(--font_4);
+}
+
+#meet-the-team div.wrapper p.short-desc{
+    text-align: center;
+    line-height: 1.75em;
+    font-size: 18px;
+    font: var(--font_8);
+    color: rgb(var(--color_15));
+    margin: 20px;
+}
+
+#meet-the-team div.wrapper div.team {
+    display: flex;
+    flex-direction: row;
+    width: 90%; 
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 60px 0px;
+}
+
+div.team div.member-profile {
+    text-align: center;
+    background: #000;
+    padding-bottom: 30px;
+}
+
+div.team div.member-profile>* {
+    margin-bottom: 20px;
+}
+
+div.wrapper div.team div.member-profile img{
+    width: 430px;
+    height: 400px;
+}
+
+div.team div.member-profile h3.member-name{
+    line-height: 1.41em;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: rgb(var(--color_18));
+    font: var(--font_6);
+}
+
+div.team div.member-profile p.member-role {
+    font: var(--font_8);
+    color: rgb(var(--color_15));
+    text-align: center;
+    line-height: 1.75em;
+    font-size: 18px;
+}
