@@ -1,9 +1,5 @@
 @import "root.css";
 
-#meet-the-team {
-
-}
-
 #meet-the-team div.wrapper h2.title{
     text-transform: uppercase;
     color: rgb(var(--color_18));
