@@ -8,9 +8,8 @@ class AccountSerializer(ModelSerializer):
         model = Account
         fields = (
             'id', 'first_name', 'last_name', "username", 'email', 'is_staff', 'is_superuser', 'phone', 'age', 'address',
-            'role', 'is_active'
+            'role', 'is_active', 'get_avatar'
         )
-
 
 class LoginAccountSerializer(ModelSerializer):
     class Meta:

@@ -22,7 +22,7 @@ def initial_role_data(apps, schema_editor):
             last_name=user['last_name'],
             is_staff=False,
             username=user['email'].split('@')[0],
-            avatar=None,
+            avatar=user['avatar'],
             email=user["email"],
             address=user['address'],
             phone=user['phone'],

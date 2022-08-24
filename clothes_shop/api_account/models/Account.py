@@ -15,3 +15,8 @@ class Account(AbstractUser):
     address = models.TextField(null=True, blank=True)
     phone = models.CharField(max_length=20, null=True, blank=True)
     age = models.IntegerField(null=True, blank=True)
+
+    def get_avatar(self):
+        if self.avatar:
+            return "https://res.cloudinary.com/dsa93ocf0/" + self.avatar
+        return ""

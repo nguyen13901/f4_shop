@@ -17,8 +17,8 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     color = models.CharField(max_length=20)
     slug = models.SlugField()
-    image = models.ImageField(upload_to='uploads/', blank=True, null=True)
-    thumbnail = models.ImageField(upload_to='uploads/', blank=True, null=True);
+    image = models.CharField(max_length=300, null=True, blank=True)
+    thumbnail = models.CharField(max_length=300, null=True, blank=True)
     created_at = models.DateTimeField(default=timezone.now)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -34,20 +34,20 @@ class Product(models.Model):
 
     def get_image(self):
         if self.image:
-            return "http://127.0.0.1:8000" + self.image.url
+            return "https://res.cloudinary.com/dsa93ocf0/" + self.image
         return ""
 
     def get_thumbnail(self):
-        if self.thumbnail:
-            return "http://127.0.0.1:8000" + self.thumbnail.url
-        else:
-            if self.image:
-                self.thumbnail = self.make_thumbnail(self.image)
-                self.save()
-
-                return "http://127.0.0.1:8000" + self.thumbnail.url
-            else:
-                return ""
+        # if self.thumbnail:
+        #     return self.thumbnail.url
+        # else:
+        #     if self.image:
+        #         self.thumbnail = self.make_thumbnail(self.image)
+        #         self.save()
+        #
+        #         return self.thumbnail
+        #     else:
+        return ""
 
     def make_thumbnail(self, image, size=(300, 200)):
         img = Image.open(image)
