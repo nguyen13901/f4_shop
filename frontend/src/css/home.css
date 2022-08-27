@@ -9,17 +9,35 @@ header {
 }
 
 .header-bar {
+    display: flex;
     width: 100%;
+    align-items: center;
 }
 
-.header-title {
+.header-bar .login {
+    background: #fff;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 60px;
+}
+
+.header-bar .login a {
+    color: black;
+    line-height: 40px;
+}
+
+div#header-title {
     height: 100px;
     text-align: center;
     width: 95%;
     margin: 0 auto;
     font-size: 70px;
     color: #fff;
-    text-decoration: underline;
 }
 
 .header-container {

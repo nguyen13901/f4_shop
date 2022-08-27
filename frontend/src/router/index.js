@@ -4,6 +4,7 @@ import HomePage from "@/components/HomePage.vue"
 import AboutPage from "@/components/AboutPage.vue"
 import ContactPage from "@/components/ContactPage.vue"
 import MeetTheTeam from "@/components/MeetTheTeam.vue"
+import LoginPage from "@/components/LoginPage.vue"
 
 const routes = [
   {
@@ -26,6 +27,11 @@ const routes = [
     name: "MeetTheTeam",
     component: MeetTheTeam,
   },
+  {
+    path: "/login",
+    name: "Login",
+    component: LoginPage,
+  }
 ];
 
 const router = createRouter({

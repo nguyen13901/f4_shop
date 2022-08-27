@@ -20,21 +20,42 @@
             </div>
         </div>
         <div class="header-bar">
-            <div class="header-title">Jin F4Shop</div>
+            <div id="header-title">Jin F4Shop</div>
+            <div class="login">
+                <router-link to="/login">Log in</router-link>
+            </div>
         </div>
         <div class="header-container">
             <div class="nav-container">
                 <div class="navigation">
                     <ul>
-                        <li><a><router-link to="/">Home</router-link></a></li>
-                        <li><a><router-link to="/about-us">About us</router-link></a></li>
-                        <li><a href="#"><router-link to="/contact">Contact</router-link></a></li>
-                        <li><a href="#"><router-link to="/meet-the-team">Meet the Team</router-link></a></li>
-                        <li><a href="#"><router-link to="/FAQ">FAQ</router-link></a></li>
-                        <li><a href="#"><router-link to="/support">Support</router-link></a></li>
-                        <li><a href="#"><router-link to="/store-policies">Store Policies</router-link></a></li>
-                        <li><a href="#"><router-link to="/testimonials">Testimonials</router-link></a></li>
-                        <li><a href="#"><router-link to="/shop">Shop</router-link></a></li>
+                        <li><a>
+                                <router-link to="/">Home</router-link>
+                            </a></li>
+                        <li><a>
+                                <router-link to="/about-us">About us</router-link>
+                            </a></li>
+                        <li><a href="#">
+                                <router-link to="/contact">Contact</router-link>
+                            </a></li>
+                        <li><a href="#">
+                                <router-link to="/meet-the-team">Meet the Team</router-link>
+                            </a></li>
+                        <li><a href="#">
+                                <router-link to="/FAQ">FAQ</router-link>
+                            </a></li>
+                        <li><a href="#">
+                                <router-link to="/support">Support</router-link>
+                            </a></li>
+                        <li><a href="#">
+                                <router-link to="/store-policies">Store Policies</router-link>
+                            </a></li>
+                        <li><a href="#">
+                                <router-link to="/testimonials">Testimonials</router-link>
+                            </a></li>
+                        <li><a href="#">
+                                <router-link to="/shop">Shop</router-link>
+                            </a></li>
                     </ul>
                 </div>
                 <i class="fa fa-facebook"></i>
